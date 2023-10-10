@@ -1,0 +1,49 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    margin: 20px 0;
+}
+.padding{
+    padding: 0.7vw;
+}
+.center{
+    text-align: center;
+}
+.no-margin{
+    margin: 0px
+}
+#title{
+    padding: 30px 0px 0px;
+    font-size: 50px;
+}
+#main{
+    background-color:#eeeeee;
+    border-radius: 1%;
+    margin: 30px 8px;
+}
+#img-div{
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+#image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.sub-title{
+    padding: 1vw;
+    text-align: center;
+}
+.time-line{
+    margin: 0 auto 50px auto;
+    max-width: 37%;
+    text-align: left;
+}
+blockquote{
+    font-style: italic;
+    max-width: 37%;
+    margin: 0 auto;
+}

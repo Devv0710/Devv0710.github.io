@@ -1,0 +1,169 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{font-family: 'Roboto', sans-serif; background-color: #eee;}
+h2{margin: 10px 15px;text-align: center;font-size: 1.8em;}
+h3{margin: 5px 10px; text-align: center;font-size: 1.4em;}
+p{margin: 5px 10px; text-align: center; font-size: 0.9em;}
+ul{list-style: none;}
+a{text-decoration: none; color: black; margin: 0 10px;}
+.container{max-width: 1000px; margin: 0 auto; margin-top: 200px;}
+h2,h3{font-weight: 400}
+button, input[type="submit"]{
+    background-color: rgb(255, 177, 31);
+    font-size: 1.2em;
+    padding: 5px 10px;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 2px 1px 5px black;
+}
+button:hover, input[type="submit"]:hover{
+    background-color: rgb(255, 153, 0);
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+#header .logo{
+    margin: 0 auto;
+}
+#header #header-img{
+    width: 90%;
+}
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+#header ul{
+    text-align: center;
+}
+.hero{
+    margin-bottom: 100px;
+}
+.hero #form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero #email{
+    margin-bottom: 10px;
+    width: 300px;
+    padding: 5px 10px;
+}
+#features .features-box{
+    margin-bottom: 60px;
+}
+#hitw{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+#pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#pricing .pricing-products{
+    border: 1px solid black;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;   
+}
+#pricing h3{
+    background-color: #ddd;
+    width: 100%;
+    margin-top: 0;
+    padding: 10px;
+}
+#pricing p{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px;
+}
+#pricing ul{
+    text-align: center;
+}
+#pricing li{
+    margin-bottom: 15px;
+}
+#pricing button{
+    margin: 20px;
+}
+footer{
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+}
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+footer p{
+    text-align: end;
+   
+}
+#features .features-ico{
+    display: none;
+}
+@media (min-width: 768px) {
+    #header{
+        flex-direction: row;
+        padding-top: 20px;
+        justify-content: space-between;
+    }
+    #header #header-img{
+        max-width: 368px;
+    }
+    #header .logo{
+        margin: 0;
+    }
+    #header ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 400px;
+    }
+    #features{
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+    #features .features-ico{
+        display: block;
+        width: 0%;
+    }
+    #features .features-box{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-items: center;
+        align-items: center;
+    }
+    #features h3, #features p{
+        text-align: initial;
+    }
+    #pricing{
+        flex-direction: row;
+        gap: 1em;
+    }
+}
+

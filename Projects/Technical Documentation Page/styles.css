@@ -1,0 +1,58 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+body{font-family: 'Open Sans', Arial, sans-serif; background-color: rgb(245, 245, 245); line-height: 1.5; margin: 0;}
+header{font-size: 1.75em; font-weight: 100; color: rgb(34, 34, 34);}
+p{font-size: 1.05em; padding: 0 15px;}
+ul, p{color: rgb(68, 67, 67);}
+a{font-size: 1.10em; text-decoration: none; color: black;}
+#main-doc{
+    margin: 0 auto;
+    padding: 30px;
+}
+.main-section code{
+    margin: 0 29px;
+    padding:20px 15px;
+    display: block;
+    background-color: #eee;
+}
+#navbar{
+    background-color: #eee;
+    margin: 0;
+}
+#navbar header{
+    text-align: center;
+    padding-top: 10px;
+}
+#navbar ul{
+    height: 30vw;
+    overflow: hidden;
+    overflow-y: scroll;
+    list-style: none;
+    padding: 0;
+    border: 2px solid black;
+    
+}
+#navbar a{
+    display: block;
+    padding: 10px 30px;
+    border-bottom: 1px solid black;
+}
+@media (min-width: 815px) {
+    #navbar{
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        border-right: 2px solid rgb(151, 148, 148);
+    }
+    #navbar ul{
+        height: 100%;
+        border: none;
+        border-top: 1px solid black;
+    }
+    #main-doc{
+        padding:20px;
+        margin-left: 310px;
+
+    }
+}
