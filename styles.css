@@ -28,6 +28,9 @@ a {
 li {
    list-style: none;
 }
+img{
+   width: 100%;
+}
 #navbar {
    background-color: #be3144;
    position: fixed;
@@ -44,6 +47,15 @@ li {
 #navbar a {
    margin: 10px 20px;
 }
+#navbar .menu-hamburguesa{
+   font-size: 2rem;
+   display: none;
+   background-color: transparent;
+   cursor: pointer;
+   border:none;
+   color: white;
+}
+
 #welcome-section {
    text-align: center;
    background-color: rgb(34, 34, 34);
@@ -62,7 +74,7 @@ li {
 #welcome-section p {
    color: #be3144;
    margin: 0;
-   font-size: 1.8em;
+   font-size: 2.1em;
    font-style: italic;
    font-weight: lighter;
 }
@@ -75,9 +87,25 @@ li {
 #projects h2 {
    margin: 0px 20px 20px 20px;
    padding: 0;
-   padding-top: 100px;
+   padding-top: 73px;
    border-bottom: 1px solid white;
    font-size: 2.6em;
+}
+
+@media (min-width: 768px) {
+   #projects .projects-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      align-content: center;
+   }
+   #projects .project-tile {
+      width: 100%;
+      max-width: 400px;
+   }
+   .last {
+      grid-column: 1/3;
+   }
 }
 #projects .project-tile {
    margin: 0 10px 20px;
@@ -105,7 +133,7 @@ li {
    align-items: center;
    height: 100vh;
    color: white;
-   padding-top: 100px;
+   padding-top: 73px;
 }
 #contact h2 {
    margin: 0;
@@ -119,7 +147,7 @@ li {
 #contact ul {
    display: flex;
    justify-content: center;
-   max-width: 980px;
+   /* max-width: 980px; */
    width: 100%;
    flex-wrap: wrap;
 }
@@ -129,25 +157,10 @@ li {
 footer {
    background-color: #2b354d;
    border-top: 5px solid #be3144;
-   padding: 50px;
+   padding: 25px 50px;
    color: white;
 }
 footer p {
    margin: 0;
    text-align: end;
-}
-@media (min-width: 768px) {
-   #projects .projects-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      justify-items: center;
-      align-content: center;
-   }
-   #projects .project-tile {
-      width: 100%;
-      max-width: 400px;
-   }
-   .last {
-      grid-column: 1/3;
-   }
 }
