@@ -43,7 +43,8 @@ h1, p{
 }
 #survey-form{
     background-color: var(--color-darblue-aplha);
-    width: 50%; 
+    max-width: 750px;
+    width: 75%; 
     margin: 0 auto;
     border-radius: 1%;
     padding: 2.5rem;
