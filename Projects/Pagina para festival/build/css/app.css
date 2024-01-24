@@ -562,11 +562,11 @@
   }
   
   .rock .nombre-escenario::after {
-    background-image: url("../../../build/img/icono_rock.png");
+    background-image: url("../img/icono_rock.png");
   }
   
   .edm .nombre-escenario::after {
-    background-image: url("../../../build/img/icono_edm.png");
+    background-image: url("../img/icono_edm.png");
   }
   
   .calendario {
